@@ -1,0 +1,101 @@
+*{
+	font-family: Arial;
+}
+i,i *{
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+body{
+	margin: 0px;
+}
+header{
+	text-align: center;
+	background-color: #F0F0F0;
+	padding: 1px;
+}
+#resultPane{
+	background-color: #F0F0F0;
+	display: inline-block;
+	padding: 5px;
+	width: 200px;
+	height: 100px;
+	overflow: scroll;
+}
+#sideBar{
+	margin: 10px;
+	box-shadow: 3px 3px 15px gray;
+	padding: 10px;
+	border-radius: 10px;
+}
+#main{
+	display: inline-block;
+	padding-left: 20px;
+}
+#sideBarWrap{
+	width: 300px;
+}
+#main p i{
+	font-size: 20px;
+}
+input{
+	border: 3px solid #D0D0D0;
+	font-size: 20px;
+	padding: 5px;
+	margin: 0;
+}
+button{
+	border: none;
+	background-color: #4CAF50;
+	padding: 10px 20px;
+	color: white;
+	font-size: 16px;
+}
+:focus{
+	outline: none;
+}
+td{
+	padding: 0px;
+}
+input:focus{
+	border-color: #A0A0A0;
+}
+#mainWrap{
+	display: inline-block;
+}
+@media only screen and (min-width: 420px){
+	button:hover{
+		background-color: #46a049;
+	}
+}
+@media only screen and (max-width: 420px){
+	#sideBarWrap{
+		width: 100%;
+	}
+	#mainWrap{
+		display: block;
+		margin: 20px;
+	}
+	#resultPane{
+		width: calc(100% - 10px);
+	}
+	#main{
+		padding: 0px;
+		width: 100%;
+	}
+	tr{
+		display: inline-block;
+	}
+	p i{
+		width: 100%;
+	}
+	input{
+		width: calc(100% - 10px - 6px);
+	}
+	button{
+		width: 100%;
+	}
+	button:active{
+		background-color: #46a049;
+	}
+}
+
